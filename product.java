@@ -29,4 +29,17 @@ else
 System.out.println(p[2].price+" is smallest price");
 }	
 }	
-		
+/******************OUTPUT***********
+Enter the data:
+1
+20
+akaka
+Enter the data:
+2
+15
+kjewjk
+Enter the data:
+3
+10
+kl
+10 is smallest price*/		
