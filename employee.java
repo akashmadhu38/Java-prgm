@@ -7,7 +7,9 @@ public class employee {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		employee[] e=new employee[3];
-		for(int i=0;i<3;i++)
+		System.out.println("Enter the limit");
+		int n=sc.nextInt();
+		for(int i=0;i<n;i++)
 		{
 			System.out.println("Enter the data:");
 			e[i]=new employee();
@@ -17,7 +19,7 @@ public class employee {
 		}
 		System.out.println("Enter the employee number:");
 		int enoo=sc.nextInt();
-		for(int i=0;i<3;i++)
+		for(int i=0;i<n;i++)
 		{
 			if(e[i].eno==enoo)
 			{
@@ -25,7 +27,7 @@ public class employee {
 				System.out.println("name:"+e[i].ename+"\nemployee number:"+e[i].eno+"\nemployee salary:"+e[i].esalary);
 				break;
 			}
-			if(i==3)
+			if(i==n-1)
 			{
 				System.out.println("Employee not found:");
 			}
