@@ -1,5 +1,6 @@
 import java.util.*;
-class complex{
+class complex
+{
 	double r,i,re,im;
 public static void main(String a[])
 {
