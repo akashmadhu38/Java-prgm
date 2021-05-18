@@ -29,6 +29,17 @@ public class search {
 
 }
 
-
+/*
+***********************OUTPUT*******************
+Enter limit:
+3
+Enter the data:
+1
+2
+4
+Search:
+2
+2 Element found at 2 position
+*/
 
 
