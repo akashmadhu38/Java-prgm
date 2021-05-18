@@ -35,5 +35,18 @@ public class employee {
 
 
 	}
+	
+	
+	
 
 }
+/*
+********************OUTPUT*********************
+Enter the complex number a:
+2.6
+3.8
+Enter the complex number b:
+89
+*/
+22.7
+Sum:91.6+26.5i
