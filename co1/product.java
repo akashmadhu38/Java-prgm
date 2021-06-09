@@ -13,8 +13,11 @@ for(int i=0;i<3;i++)
 {
 	System.out.println("Enter the data:");
 	p[i]=new product();
+	System.out.println("product code:");
 	p[i].pcode=sc.nextInt();
+	System.out.println("product price:");
 	p[i].price=sc.nextInt();
+	System.out.println("product name:");
 	p[i].pname=sc.next();
 }
 
