@@ -21,16 +21,17 @@ for(int i=0;i<3;i++)
 	p[i].pname=sc.next();
 }
 
-if(p[0].price<p[1].price)
+if(p[0].price<p[1].price && p[0].price<p[2].price)
 {
-	if(p[0].price<p[2].price)
-	System.out.println(p[0].price+" is smallest price");
-	else
-	System.out.println(p[1].price+" is smallest price");
+	System.out.println(p[0].price+" is smallest");
 }
-else if(p[1].price<p[2].price)
-System.out.println(p[1].price+" is smallest price");
+else if(p[1].price<p[0].price && p[1].price<p[2].price)
+{
+	System.out.println(p[1].price+" is smallest");
+}
 else
-System.out.println(p[2].price+" is smallest price");
-}	
-}	
+{
+	System.out.println(p[2].price+" is smallest");
+}
+}
+}
