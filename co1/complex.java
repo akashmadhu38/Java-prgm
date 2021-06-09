@@ -13,7 +13,7 @@ public static void main(String a[])
 	c1.r=sc.nextDouble();
 	c1.i=sc.nextDouble();
 	double sr=c1.r+c.r;
-	double si=c1.i+c1.i;
+	double si=c1.i+c.i;
 	System.out.println("Sum:"+sr+"+"+si+"i");
 }
 }
