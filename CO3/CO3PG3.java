@@ -1,12 +1,10 @@
-package src.CO3;
-
 import java.util.*;
 abstract class Shapes{
     abstract void draw();
     abstract void erase();
 }
 
-class circle extends Shapes{
+class circle extends Shapes {
     @Override
     void draw() {
         Scanner sc = new Scanner(System.in);
@@ -21,7 +19,7 @@ class circle extends Shapes{
     }
 }
 
-class square extends Shapes{
+class square extends Shapes {
     @Override
     void draw() {
         Scanner sc = new Scanner(System.in);
@@ -36,7 +34,7 @@ class square extends Shapes{
     }
 }
 
-class triangle extends Shapes{
+class triangle extends Shapes {
     @Override
     void draw() {
         Scanner sc = new Scanner(System.in);
@@ -63,5 +61,7 @@ public class CO3PG3 {
         s.draw();
         s.erase();
         s = new square();
+        s.draw();
+        s.erase();
     }
 }
