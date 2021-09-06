@@ -10,7 +10,7 @@ class circle extends Shapes {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the radius:");
         int radius = sc.nextInt();
-        System.out.println("Area of circle:"+(3.14f));
+        System.out.println("Area of circle:"+(3.14f*radius*radius));
     }
 
     @Override
