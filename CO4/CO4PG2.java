@@ -1,31 +1,39 @@
-import java.io.*;
-import java.util.*;
+package src.CO4;
 
-class filhand{
-    String fname;
-    void getname(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a file name (.text):");
-        fname = sc.next();
-    }
-    void writefil() throws Exception{
-        FileOutputStream fos = new FileOutputStream(fname);
-        DataOutputStream dos = new DataOutputStream(fos);
-        dos.writeUTF("Hi this Akash");
-    }
-    void readfil() throws Exception{
-        FileInputStream fis = new FileInputStream(fname);
-        DataInputStream dis = new DataInputStream(fis);
-        String str = dis.readUTF();
-        System.out.println(str);
+import java.util.*;
+class Hi extends Thread {
+    public synchronized void run(){
+        for(int i=0;i<10;i++){
+            System.out.println("Hi");
+            try {
+                Thread.sleep(1000);
+            }catch (Exception e){}
+        }
     }
 }
-
-public class CO4PG2 {
-    public static void main(String ...a) throws Exception {
-        filhand f = new filhand();
-        f.getname();
-        f.writefil();
-        f.readfil();
+class Hello implements Runnable{
+    public synchronized void run(){
+        for(int i=0;i<10;i++){
+            System.out.println("Hello");
+            try {
+                Thread.sleep(1000);
+            }catch (Exception e){}
+        }
+    }
+}
+public class CO4PG1 {
+    public static void main(String ...a){
+        Hi t = new Hi();
+        Hello r = new Hello();
+        Thread t1 = new Thread(r);
+        t.start();
+        try {
+            Thread.sleep(1000);
+        }catch (Exception e){}
+        t1.start();
+        try {
+            t.join();
+            t1.join();
+        }catch (Exception e){}
     }
 }
