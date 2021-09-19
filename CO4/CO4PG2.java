@@ -1,5 +1,3 @@
-package src.CO4;
-
 import java.util.*;
 class Hi extends Thread {
     public synchronized void run(){
